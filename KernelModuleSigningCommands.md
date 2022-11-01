@@ -41,6 +41,8 @@ Pulled bits of this form a few places. This is done in bash.
     # import the key onto your systems keychain
     mokutil --import my_signing_key_pub.der
     
+    # mokutil will ask for a password and then you will need to reboot to have it added to enroll the key. Prior to enrollment you may see a message saying they key is in "the enrollment request"
+    
     # Show the builtin trusted keys
     keyctl list %:.builtin_trusted_keys
     
